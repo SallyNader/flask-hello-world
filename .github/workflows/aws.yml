@@ -24,4 +24,4 @@ jobs:
         port: 22
         script: |
           echo ${{ github.workspace }}
-          ${{ github.workspace }}/docker/deploy_production.sh
+          bash /docker/deploy_production.sh
