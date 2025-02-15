@@ -23,6 +23,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
-          chmod +x ${{ github.workspace }}/docker/deploy_production.sh
+          chmod +x ${{ github.workspace }}/flask-hello-world/docker/deploy_production.sh
           echo ${{ github.workspace }}
-          bash /docker/deploy_production.sh
+          bash ${{ github.workspace }}/flask-hello-world/docker/deploy_production.sh
