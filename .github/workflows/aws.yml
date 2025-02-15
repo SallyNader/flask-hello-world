@@ -22,4 +22,6 @@ jobs:
         username: ${{ vars.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: 22
-        script: docker/deploy_production.sh
+        script: |
+          echo ${{ github.workspace }}
+          ${{ github.workspace }}/docker/deploy_production.sh
