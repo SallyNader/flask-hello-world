@@ -24,5 +24,5 @@ jobs:
         port: 22
         script: |
           chmod +x /flask-hello-world/docker/deploy_production.sh
-          echo ${{ github.workspace }}
+          echo $GITHUB_ACTION_PATH
           bash /flask-hello-world/docker/deploy_production.sh
