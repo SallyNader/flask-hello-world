@@ -22,8 +22,4 @@ jobs:
         username: ${{ vars.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: 22
-        script: |
-          pwd
-          chmod +x deploy_production.sh
-          echo $GITHUB_ACTION_PATH
-          bash deploy_production.sh
+        script: /docker/deploy_production.sh
