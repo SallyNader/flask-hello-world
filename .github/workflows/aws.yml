@@ -22,4 +22,6 @@ jobs:
         username: ${{ vars.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         port: 22
-        script: /docker/deploy_production.sh
+        script: |
+         chmod +x /docker/deploy_production.sh
+         /docker/deploy_production.sh
