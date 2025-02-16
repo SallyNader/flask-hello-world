@@ -23,6 +23,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
-          chmod +x /flask-hello-world/docker/deploy_production.sh
+          chmod +x deploy_production.sh
           echo $GITHUB_ACTION_PATH
-          bash /flask-hello-world/docker/deploy_production.sh
+          bash deploy_production.sh
