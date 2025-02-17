@@ -24,4 +24,4 @@ jobs:
         port: 22
         script: |
           sudo chmod +x /docker/deploy_production.sh
-         /docker/deploy_production.sh
+          /docker/deploy_production.sh
