@@ -23,6 +23,5 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         port: 22
         script: |
-          echo "change"
           sudo chmod +x /docker/deploy_production.sh
           /docker/deploy_production.sh
